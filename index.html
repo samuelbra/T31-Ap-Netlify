@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ap-Netlify</title>
+    <script>
+        class Calculadora {
+            somar() {
+
+                var n1 = num1.value
+                var n2 = num2.value;
+                //Calculo
+                var soma = parseFloat(n1) + parseFloat(n2);
+
+                //Saída
+                alert(soma);
+            }
+
+            subtrair() {
+                //Seu codigo  -
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                var sub = n1 - n2;
+
+                alert(sub);
+            }
+
+            multiplicar() {
+                //Seu codigo   *
+
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                var mult = n1 * n2;
+
+                alert(mult);
+            }
+
+            dividir() {
+                //Seu codigo  /
+
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                if (n2 != 0) {
+                    var divi = n1 / n2;
+                    alert(divi);
+                } else {
+                    alert("Digite um numero diferente de zero");
+                }
+            }
+        }
+
+        var calc1 = new Calculadora();
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Calculadora top do Góais</h1>
+    </center>
+    <div>
+
+        <div>
+            <input id="num1" type="number" placeholder="Número 1" />
+        </div>
+        <input id="num2" type="number" placeholder="Número 2" />
+        <button onclick="calc1.somar()">Somar</button>
+        <button onclick="calc1.subtrair()">subtrair</button>
+        <button onclick="calc1.multiplicar()">multiplicar</button>
+        <button onclick="calc1.dividir()">dividir</button>
+    </div>
+</body>
+
+</html>
